@@ -15,7 +15,7 @@ module.exports = {
         medgray: "#606569",
       },
       gridTemplateColumns: {
-        'boxes': 'repeat(auto-fill, 464px)',
+        'boxes': 'repeat(auto-fit, minmax(275px, 1fr))',
       },
     },
   },

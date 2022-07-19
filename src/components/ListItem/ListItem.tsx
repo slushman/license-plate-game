@@ -15,7 +15,8 @@ const ListItem = ({ checked, label, onChange, value }: ListItemInterface) => {
         'p-4': true,
         'm-2': true,
         'bg-medblue': checked,
-        'text-white': true,
+        'text-white': checked,
+        'text-medblue': !checked,
         'text-lg': true,
         rounded: true,
     });
