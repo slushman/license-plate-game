@@ -1,7 +1,5 @@
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}"
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -15,9 +13,19 @@ module.exports = {
         medgray: "#606569",
       },
       gridTemplateColumns: {
-        'boxes': 'repeat(auto-fit, minmax(275px, 1fr))',
+        boxes: "repeat(auto-fit, minmax(275px, 1fr))",
+      },
+      height: {
+        seo: "44px",
+      },
+      margin: {
+        negseo: "-44px",
+        seo: "44px",
+      },
+      width: {
+        seo: "44px",
       },
     },
   },
   plugins: [],
-}
+};

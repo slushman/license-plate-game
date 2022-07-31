@@ -3,7 +3,6 @@ import * as React from 'react';
 import ListItem from '../ListItem';
 import { ListInterface, ListItemType } from '../types';
 
-
 const List = ({ items, onChange, selected, title }: ListInterface) => {
 
     return (

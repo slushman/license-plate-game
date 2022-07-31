@@ -24,7 +24,7 @@ const ListItem = ({ checked, label, onChange, value }: ListItemInterface) => {
     return (
         <li className="">
             <label className={labelClasses}>
-                <input checked={checked} className="mr-4" onClick={handleChange} type="checkbox" value={value} />
+                <input checked={checked} className="mr-4" onChange={handleChange} type="checkbox" value={value} />
                 <span>{label}</span>
             </label>
         </li>

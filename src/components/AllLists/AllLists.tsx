@@ -1,14 +1,19 @@
 import * as React from 'react';
 
 import { Action } from '../types';
+import FilterSearch from '../FilterSearch';
 import List from '../List';
+import { ListItemType } from '../types';
 import Score from '../Score';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 
 import * as data from './data';
 
 const AllLists = () => {
-    const [selected, setSelected] = useLocalStorage('plates-selected', []); // change to uuid for keyname to have different saved games
+    const [searchText, setSearchText] = React.useState('');
+
+    // change 'plates-selected' to 'plates-{uuid}' to have different saved games
+    const [selected, setSelected] = useLocalStorage('plates-selected', []);
     const count = selected.length;
 
     const handleChangeSelected = React.useCallback(
@@ -23,14 +28,17 @@ const AllLists = () => {
         [selected, setSelected],
     );
 
+    const filtered = (items: ListItemType[]) => items.filter((item: ListItemType) => item.label.toLowerCase().includes(searchText));
+
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center p-4">
             <Score count={count} />
-            <List items={data.USStates} onChange={handleChangeSelected} selected={selected} title="US States" />
-            <List items={data.USTerritories} onChange={handleChangeSelected} selected={selected} title="US Territories" />
-            <List items={data.NativeAmericans} onChange={handleChangeSelected} selected={selected} title="Native American Nations" />
-            <List items={data.CanadianProvinces} onChange={handleChangeSelected} selected={selected} title="Canadian Provinces" />
-            <List items={data.MexicanStates} onChange={handleChangeSelected} selected={selected} title="Mexican States" />
+            <FilterSearch searchText={searchText} setSearchText={setSearchText} />
+            <List items={filtered(data.USStates)} onChange={handleChangeSelected} selected={selected} title="US States" />
+            <List items={filtered(data.USTerritories)} onChange={handleChangeSelected} selected={selected} title="US Territories" />
+            <List items={filtered(data.NativeAmericans)} onChange={handleChangeSelected} selected={selected} title="Native American Nations" />
+            <List items={filtered(data.CanadianProvinces)} onChange={handleChangeSelected} selected={selected} title="Canadian Provinces" />
+            <List items={filtered(data.MexicanStates)} onChange={handleChangeSelected} selected={selected} title="Mexican States" />
         </div>
     );
 };
