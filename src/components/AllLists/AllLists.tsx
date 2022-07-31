@@ -3,23 +3,24 @@ import * as React from 'react';
 import { Action } from '../types';
 import List from '../List';
 import Score from '../Score';
+import { useLocalStorage } from '../../hooks/useLocalStorage';
 
 import * as data from './data';
 
 const AllLists = () => {
-    const [selected, setSelected] = React.useState<string[]>([]);
+    const [selected, setSelected] = useLocalStorage('plates-selected', []); // change to uuid for keyname to have different saved games
     const count = selected.length;
 
     const handleChangeSelected = React.useCallback(
         (value: string, action: Action) => {
             if (action === Action.Add) {
-                setSelected(prevState => [...prevState, value]);
+                setSelected((prevState: string[]) => [...prevState, value]);
             } else {
-                const newSelected = selected.filter(item => item !== value);
+                const newSelected = selected.filter((item: string) => item !== value);
                 setSelected(newSelected);
             }
         },
-        [selected],
+        [selected, setSelected],
     );
 
     return (
