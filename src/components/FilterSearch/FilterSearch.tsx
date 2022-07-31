@@ -14,10 +14,12 @@ const FilterSearch = ({
   const resetSearch = () => setSearchText('');
 
   return (
-    <div className="relative">
-      <label className="m-2">Search:</label>
-      <input className="border h-seo p-2 rounded w-80" onChange={handleSearch} type="text" value={searchText} />
-      <button aria-label="Clear search text" className="h-seo ml-negseo w-seo" onClick={resetSearch}>x</button>
+    <div className="flex items-center">
+      <label className="mr-2">Search:</label>
+      <div className="relative">
+        <input className="border h-seo p-2 rounded w-72" onChange={handleSearch} type="text" value={searchText} />
+        <button aria-label="Clear search text" className="h-seo ml-negseo w-seo" onClick={resetSearch}>x</button>
+      </div>
     </div>
   );
 };
