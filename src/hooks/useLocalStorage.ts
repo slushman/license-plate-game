@@ -25,7 +25,7 @@ export function getValue(key: string, value: LocalStorage) {
   return initialValue || value;
 }
  
-export const useLocalStorage = (key: string, newValue: LocalStorage, outputInt = false) => {
+export const useLocalStorage = (key: string, newValue: LocalStorage) => {
   let [value, setValue] = React.useState(() => {
     return getStorageValue(key, newValue);
   });
@@ -34,9 +34,5 @@ export const useLocalStorage = (key: string, newValue: LocalStorage, outputInt =
     localStorage.setItem(key, JSON.stringify(value));
   }, [key, value]);
 
-  if (outputInt) {
-    value = parseInt(value, 10);
-  }
- 
   return [value, setValue];
 };

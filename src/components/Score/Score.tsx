@@ -4,11 +4,8 @@ interface ScoreProps {
     count: number;
 }
 
-const Score = ({ count }: ScoreProps) => {
-
-    return (
-        <div className="text-3xl my-8">Total seen: {count}</div>
-    );
-};
+const Score = ({ count }: ScoreProps) => (
+    <div className="p-2 text-xl">Score: {count}</div>
+);
 
 export default React.memo(Score);

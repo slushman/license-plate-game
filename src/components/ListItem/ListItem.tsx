@@ -11,19 +11,26 @@ const ListItem = ({ checked, label, onChange, value }: ListItemInterface) => {
 
     const labelClasses = classnames({
         'bg-lightblue': !checked,
-        block: true,
-        'p-4': true,
-        'm-2': true,
         'bg-medblue': checked,
-        'text-white': checked,
-        'text-medblue': !checked,
+        'border-2': true,
+        'border-lightblue': !checked,
+        'border-solid': checked,
+        'border-white': checked,
+        'items-center': true,
+        'm-2': true,
+        'p-4': true,
         'text-lg': true,
+        'text-medblue': !checked,
+        'text-white': checked,
+        block: true,
+        flex: true,
         rounded: true,
     });
 
     return (
         <li className="">
             <label className={labelClasses}>
+                <div className="text-xl text-center">{checked ? '✓' : ''}</div>
                 <input checked={checked} className="mr-4" onChange={handleChange} type="checkbox" value={value} />
                 <span>{label}</span>
             </label>

@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import BackToTop from '../BackToTop';
 import ListItem from '../ListItem';
 import { ListInterface, ListItemType } from '../types';
 
@@ -7,7 +8,10 @@ const List = ({ items, onChange, selected, title }: ListInterface) => {
 
     return (
         <section className="w-full">
-            <h2 className="text-center">{title}</h2>
+            <div className="flex justify-between">
+                <h2 className="text-center">{title}</h2>
+                <BackToTop />
+            </div>
             <ul className="grid grid-cols-boxes justify-center">
                 {items.map(({ label, value }: ListItemType, index: number) => {
                     const checked = selected.includes(value);
