@@ -1,23 +1,28 @@
 import * as React from 'react';
 
-import Score from '../Score';
+import Button from '../Button';
 
 interface HeaderProps {
   count: number;
+  onClickScore: () => void;
   onReset: (newValue: string[]) => void;
 }
 
 const Header = ({
   count,
+  onClickScore,
   onReset,
 }: HeaderProps) => {
-  const handleNewGame = () => onReset([]);
+  const handleNewGame = React.useCallback(
+    () => onReset([]),
+    [onReset],
+  );
 
   return (
     <header className="items-center flex justify-between pt-4 pb-6 w-full">
-      <Score count={count} />
+      <Button label={`Score: ${count}`} onClick={onClickScore} />
       <h1 className="text-center">Plates</h1>
-      <button className="bg-darkblue border p-2 rounded text-white" onClick={handleNewGame}>New Game</button>
+      <Button label="New Game" onClick={handleNewGame} />
     </header>
   );
 };

@@ -1,834 +1,842 @@
 export const USStates = [
     {
-        value: 'AL',
+        value: 'US-AL',
         label: 'Alabama',
     },
     {
-        value: 'AK',
+        value: 'US-AK',
         label: 'Alaska',
     },
     {
-        value: 'AZ',
+        value: 'US-AZ',
         label: 'Arizona',
     },
     {
-        value: 'AR',
+        value: 'US-AR',
         label: 'Arkansas',
     },
     {
-        value: 'CA',
+        value: 'US-CA',
         label: 'California',
     },
     {
-        value: 'CO',
+        value: 'US-CO',
         label: 'Colorado',
     },
     {
-        value: 'CT',
+        value: 'US-CT',
         label: 'Connecticut',
     },
     {
-        value: 'DE',
+        value: 'US-DE',
         label: 'Delaware',
     },
     {
-        value: 'FL',
+        value: 'US-FL',
         label: 'Florida',
     },
     {
-        value: 'GA',
+        value: 'US-GA',
         label: 'Georgia',
     },
     {
-        value: 'HI',
+        value: 'US-HI',
         label: 'Hawaii',
     },
     {
-        value: 'ID',
+        value: 'US-ID',
         label: 'Idaho',
     },
     {
-        value: 'IL',
+        value: 'US-IL',
         label: 'Illinois',
     },
     {
-        value: 'IN',
+        value: 'US-IN',
         label: 'Indiana',
     },
     {
-        value: 'IA',
+        value: 'US-IA',
         label: 'Iowa',
     },
     {
-        value: 'KS',
+        value: 'US-KS',
         label: 'Kansas',
     },
     {
-        value: 'KY',
+        value: 'US-KY',
         label: 'Kentucky',
     },
     {
-        value: 'LA',
+        value: 'US-LA',
         label: 'Louisiana',
     },
     {
-        value: 'ME',
+        value: 'US-ME',
         label: 'Maine',
     },
     {
-        value: 'MD',
+        value: 'US-MD',
         label: 'Maryland',
     },
     {
-        value: 'MA',
+        value: 'US-MA',
         label: 'Massachusetts',
     },
     {
-        value: 'MI',
+        value: 'US-MI',
         label: 'Michigan',
     },
     {
-        value: 'MN',
+        value: 'US-MN',
         label: 'Minnesota',
     },
     {
-        value: 'MS',
+        value: 'US-MS',
         label: 'Mississippi',
     },
     {
-        value: 'MO',
+        value: 'US-MO',
         label: 'Missouri',
     },
     {
-        value: 'MT',
+        value: 'US-MT',
         label: 'Montana',
     },
     {
-        value: 'NE',
+        value: 'US-NE',
         label: 'Nebraska',
     },
     {
-        value: 'NV',
+        value: 'US-NV',
         label: 'Nevada',
     },
     {
-        value: 'NH',
+        value: 'US-NH',
         label: 'New Hampshire',
     },
     {
-        value: 'NJ',
+        value: 'US-NJ',
         label: 'New Jersey',
     },
     {
-        value: 'NM',
+        value: 'US-NM',
         label: 'New Mexico',
     },
     {
-        value: 'NY',
+        value: 'US-NY',
         label: 'New York',
     },
     {
-        value: 'NC',
+        value: 'US-NC',
         label: 'North Carolina',
     },
     {
-        value: 'ND',
+        value: 'US-ND',
         label: 'North Dakota',
     },
     {
-        value: 'OH',
+        value: 'US-OH',
         label: 'Ohio',
     },
     {
-        value: 'OK',
+        value: 'US-OK',
         label: 'Oklahoma',
     },
     {
-        value: 'OR',
+        value: 'US-OR',
         label: 'Oregon',
     },
     {
-        value: 'PA',
+        value: 'US-PA',
         label: 'Pennsylvania',
     },
     {
-        value: 'RI',
+        value: 'US-RI',
         label: 'Rhode Island',
     },
     {
-        value: 'SC',
+        value: 'US-SC',
         label: 'South Carolina',
     },
     {
-        value: 'SD',
+        value: 'US-SD',
         label: 'South Dakota',
     },
     {
-        value: 'TN',
+        value: 'US-TN',
         label: 'Tennessee',
     },
     {
-        value: 'TX',
+        value: 'US-TX',
         label: 'Texas',
     },
     {
-        value: 'UT',
+        value: 'US-UT',
         label: 'Utah',
     },
     {
-        value: 'VT',
+        value: 'US-VT',
         label: 'Vermont',
     },
     {
-        value: 'VA',
+        value: 'US-VA',
         label: 'Virginia',
     },
     {
-        value: 'WA',
+        value: 'US-WA',
         label: 'Washington',
     },
     {
-        value: 'WV',
+        value: 'US-WV',
         label: 'West Virginia',
     },
     {
-        value: 'WI',
+        value: 'US-WI',
         label: 'Wisconsin',
     },
     {
-        value: 'WY',
+        value: 'US-WY',
         label: 'Wyoming',
     },
 ];
 
 export const USTerritories = [
     {
-        value: 'AS',
+        value: 'UST-AS',
         label: 'American Samoa',
     },
     {
-        value: 'DC',
+        value: 'UST-DC',
         label: 'Washington D.C.',
     },
     {
-        value: 'GU',
+        value: 'UST-GU',
         label: 'Guam',
     },
     {
-        value: 'JA',
+        value: 'UST-JA',
         label: 'Johnston Atoll',
     },
     {
-        value: 'MY',
+        value: 'UST-MY',
         label: 'Midway Atoll',
     },
     {
-        value: 'MP',
+        value: 'UST-MP',
         label: 'Northern Mariana Islands',
     },
     {
-        value: 'PC',
+        value: 'UST-PC',
         label: 'Panama Canala Zone',
     },
     {
-        value: 'PR',
+        value: 'UST-PR',
         label: 'Puerto Rico',
     },
     {
-        value: 'US',
+        value: 'UST-US',
         label: 'US Government',
     },
     {
-        value: 'VI',
+        value: 'UST-VI',
         label: 'US Virgin Islands',
     },
     {
-        value: 'WK',
+        value: 'UST-WK',
         label: 'Wake Island',
     },
 ];
 
 export const NativeAmericans = [
     {
-        value: 'AbenakiNation',
+        value: 'NA-AN',
         label: 'Abenaki Nation',
     },
     {
-        value: 'AbsenteeShawneeTribe',
+        value: 'NA-AST',
         label: 'Absentee Shawnee Tribe',
     },
     {
-        value: 'AleutCommunity',
+        value: 'NA-AC',
         label: 'Aleut Community',
     },
     {
-        value: 'ApacheTribe',
+        value: 'NA-AT',
         label: 'Apache Tribe',
     },
     {
-        value: 'BadRiverBandLakeSuperiorChippewa',
+        value: 'NA-BRBLSC',
         label: 'Bad River Band Lake Superior Chippewa',
     },
     {
-        value: 'BayMillsOjibwe',
+        value: 'NA-BMO',
         label: 'Bay Mills Ojibwe',
     },
     {
-        value: 'BoisForteBandOfChippewa',
+        value: 'NA-BFBOC',
         label: 'Bois Forte Band of Chippewa',
     },
     {
-        value: 'BureauOfIndianAffairs',
+        value: 'NA-BOIA',
         label: 'Bureau of Indian Affairs',
     },
     {
-        value: 'CaddoNation',
+        value: 'NA-CAN',
         label: 'Caddo Nation',
     },
     {
-        value: 'CherokeeNation',
+        value: 'NA-CN',
         label: 'Cherokee Nation',
     },
     {
-        value: 'CheyenneArapahoTribes',
+        value: 'NA-CAT',
         label: 'Cheyenne-Arapaho Tribes',
     },
     {
-        value: 'CheyenneRiverSioux',
+        value: 'NA-CRS',
         label: 'Cheyenne River Sioux',
     },
     {
-        value: 'ChickaloonVillage',
+        value: 'NA-CV',
         label: 'Chickaloon Village',
     },
     {
-        value: 'ChickasawNation',
+        value: 'NA-CSN',
         label: 'Chickasaw Nation',
     },
     {
-        value: 'ChoctawNation',
+        value: 'NA-CTN',
         label: 'Choctaw Nation',
     },
     {
-        value: 'CitizenPotawatomiNation',
+        value: 'NA-CPN',
         label: 'Citizen Potawatomi Nation',
     },
     {
-        value: 'ColvilleTribe',
+        value: 'NA-CT',
         label: 'Colville Tribe',
     },
     {
-        value: 'ComancheNation',
+        value: 'NA-CMN',
         label: 'Comanche Nation',
     },
     {
-        value: 'CrowCreekSioux',
+        value: 'NA-CCS',
         label: 'Crow Creek Sioux',
     },
     {
-        value: 'DelawareNation',
+        value: 'NA-DN',
         label: 'Delaware Nation',
     },
     {
-        value: 'DevilsLakeSiouxTribe',
+        value: 'NA-DLST',
         label: 'Devils Lake Sioux Tribe',
     },
     {
-        value: 'EasternBandOfCherokeeIndians',
+        value: 'NA-EBOCI',
         label: 'Eastern Band of Cherokee Indians',
     },
     {
-        value: 'EasternShawneeTribe',
+        value: 'NA-EST',
         label: 'Eastern Shawnee Tribe',
     },
     {
-        value: 'FlandreauSanteeSioux',
+        value: 'NA-FSS',
         label: 'Flandreau Santee Sioux',
     },
     {
-        value: 'FondDuLacBandOfLakeSuperiorChippewa',
+        value: 'NA-FDLBOLSC',
         label: 'Fond du Lac Band of Lake Superior Chippewa',
     },
     {
-        value: 'GoldCreekSusitna',
+        value: 'NA-GCS',
         label: 'Gold Creek Susitna',
     },
     {
-        value: 'GrandPortageBandOfLakeSuperiorChippewa',
+        value: 'NA-GPBOLSC',
         label: 'Grand Portage Band of Lake Superior Chippewa',
     },
     {
-        value: 'HoChunkNation',
+        value: 'NA-HCN',
         label: 'Ho-Chunk Nation',
     },
     {
-        value: 'IowaTribe',
+        value: 'NA-IT',
         label: 'Iowa Tribe',
     },
     {
-        value: 'KalispelTribe',
+        value: 'NA-KT',
         label: 'Kalispel Tribe',
     },
     {
-        value: 'KawNation',
+        value: 'NA-KN',
         label: 'Kaw Nation',
     },
     {
-        value: 'KeetoowahBandOfCherokeeIndians',
+        value: 'NA-KBOCI',
         label: 'Keetoowah Band of Cherokee Indians',
     },
     {
-        value: 'KeweenawBayOjibwaTribe',
+        value: 'NA-KBOT',
         label: 'Keweenaw Bay Ojibwa Tribe',
     },
     {
-        value: 'KickapooTribe',
+        value: 'NA-KPT',
         label: 'Kickapoo Tribe',
     },
     {
-        value: 'KiowaTribe',
+        value: 'NA-KIT',
         label: 'Kiowa Tribe',
     },
     {
-        value: 'KnikTribe',
+        value: 'NA-KNT',
         label: 'Knik Tribe',
     },
     {
-        value: 'LacCourteOreillesOjibweNation',
+        value: 'NA-LCOON',
         label: 'Lac Courte Oreilles Ojibwe Nation',
     },
     {
-        value: 'LacDuFlambeauOjibweNation',
+        value: 'NA-LDFON',
         label: 'Lac du Flambeau Ojibwe Nation',
     },
     {
-        value: 'LeechLakeBandOfOjibwe',
+        value: 'NA-LLBOO',
         label: 'Leech Lake Band of Ojibwe',
     },
     {
-        value: 'LittleShellPembinaBand',
+        value: 'NA-LSPB',
         label: 'Little Shell Pembina Band',
     },
     {
-        value: 'LowerBruleSioux',
+        value: 'NA-LBS',
         label: 'Lower Brule Sioux',
     },
     {
-        value: 'LummiTribe',
+        value: 'NA-LT',
         label: 'Lummi Tribe',
     },
     {
-        value: 'MakahIndianNation',
+        value: 'NA-MIN',
         label: 'Makah Indian Nation',
     },
     {
-        value: 'MandanHidatsaAndArikaraNation',
+        value: 'NA-MHAAN',
         label: 'Mandan, Hidatsa and Arikara Nation',
     },
     {
-        value: 'MenomineeNation',
+        value: 'NA-MN',
         label: 'Menominee Nation',
     },
     {
-        value: 'MiamiNation',
+        value: 'NA-MIN',
         label: 'Miami Nation',
     },
     {
-        value: 'MiccosukeeNation',
+        value: 'NA-MSN',
         label: 'Miccosukee Nation',
     },
     {
-        value: 'MilleLacsBandOfOjibwe',
+        value: 'NA-MLBOO',
         label: 'Mille Lacs Band of Ojibwe',
     },
     {
-        value: 'ModocTribe',
+        value: 'NA-MDT',
         label: 'Modoc Tribe',
     },
     {
-        value: 'MuckleshootTribe',
+        value: 'NA-MST',
         label: 'Muckleshoot Tribe',
     },
     {
-        value: 'MuscogeeCreekNation',
+        value: 'NA-MCN',
         label: 'Muscogee Creek Nation',
     },
     {
-        value: 'NanticokeIndianAssociation',
+        value: 'NA-NIA',
         label: 'Nanticoke Indian Association',
     },
     {
-        value: 'NativeIndianTribalPlates',
+        value: 'NA-NITP',
         label: 'Native Indian Tribal Plates',
     },
     {
-        value: 'NavajoCodeTalker',
+        value: 'NA-NCT',
         label: 'Navajo Code Talker',
     },
     {
-        value: 'NorthernCherokeeNation',
+        value: 'NA-NCN',
         label: 'Northern Cherokee Nation',
     },
     {
-        value: 'OglalaSioux',
+        value: 'NA-OGS',
         label: 'Oglala Sioux',
     },
     {
-        value: 'OneidaNation',
+        value: 'NA-ONN',
         label: 'Oneida Nation',
     },
     {
-        value: 'OsageNation',
+        value: 'NA-OSN',
         label: 'Osage Nation',
     },
     {
-        value: 'OtoeMissouriaTribe',
+        value: 'NA-OMT',
         label: 'Otoe Missouria Tribe',
     },
     {
-        value: 'OttawaTribe',
+        value: 'NA-OTT',
         label: 'Ottawa Tribe',
     },
     {
-        value: 'OuachitaWashitaw',
+        value: 'NA-OW',
         label: 'Ouachita/Washitaw',
     },
     {
-        value: 'PakawaniNation',
+        value: 'NA-PKN',
         label: 'Pakawani Nation',
     },
     {
-        value: 'PassamaquoddyTribe',
+        value: 'NA-PQT',
         label: 'Passamaquoddy Tribe',
     },
     {
-        value: 'PawneeNation',
+        value: 'NA-PNN',
         label: 'Pawnee Nation',
     },
     {
-        value: 'PenobscotNation',
+        value: 'NA-PSN',
         label: 'Penobscot Nation',
     },
     {
-        value: 'PeoriaNation',
+        value: 'NA-PEN',
         label: 'Peoria Nation',
     },
     {
-        value: 'PoncaNation',
+        value: 'NA-PON',
         label: 'Ponca Nation',
     },
     {
-        value: 'PotawatomiPrairieBand',
+        value: 'NA-PPB',
         label: 'Potawatomi Prairie Band',
     },
     {
-        value: 'PuyallupTribe',
+        value: 'NA-PYT',
         label: 'Puyallup Tribe',
     },
     {
-        value: 'QuapawTribe',
+        value: 'NA-QT',
         label: 'Quapaw Tribe',
     },
     {
-        value: 'QuinaultNation',
+        value: 'NA-QN',
         label: 'Quinault Nation',
     },
     {
-        value: 'RedCliffBandOfLakeSuperiorChippewa',
+        value: 'NA-RCBOLSC',
         label: 'Red Cliff Band of Lake Superior Chippewa',
     },
     {
-        value: 'RedLakeBandOfChippewa',
+        value: 'NA-RLBOC',
         label: 'Red Lake Band of Chippewa',
     },
     {
-        value: 'RosebudSioux',
+        value: 'NA-RS',
         label: 'Rosebud Sioux',
     },
     {
-        value: 'SacAndFoxNation',
+        value: 'NA-SAFN',
         label: 'Sac and Fox Nation',
     },
     {
-        value: 'SaginawChippewaTribe',
+        value: 'NA-SGCT',
         label: 'Saginaw Chippewa Tribe',
     },
     {
-        value: 'SeminoleIndians',
+        value: 'NA-SI',
         label: 'Seminole Indians',
     },
     {
-        value: 'SeminoleNation',
+        value: 'NA-SN',
         label: 'Seminole Nation',
     },
     {
-        value: 'SenecaCayugaTribe',
+        value: 'NA-SCT',
         label: 'Seneca Cayuga Tribe',
     },
     {
-        value: 'ShawneeTribe',
+        value: 'NA-SHT',
         label: 'Shawnee Tribe',
     },
     {
-        value: 'SissetonWahpetonSioux',
+        value: 'NA-SWS',
         label: 'Sisseton Wahpeton Sioux',
     },
     {
-        value: 'SouthernCherokeeNation',
+        value: 'NA-SCN',
         label: 'Southern Cherokee Nation',
     },
     {
-        value: 'SouthernUteTribe',
+        value: 'NA-SUT',
         label: 'Southern Ute Tribe',
     },
     {
-        value: 'SpiritLakeSiouxTribe',
+        value: 'NA-SLST',
         label: 'Spirit Lake Sioux Tribe',
     },
     {
-        value: 'SpokaneTribe',
+        value: 'NA-SPT',
         label: 'Spokane Tribe',
     },
     {
-        value: 'StandingRockSioux',
+        value: 'NA-SRS',
         label: 'Standing Rock Sioux',
     },
     {
-        value: 'TonkawaTribe',
+        value: 'NA-TT',
         label: 'Tonkawa Tribe',
     },
     {
-        value: 'TribalVehicles',
+        value: 'NA-TV',
         label: 'Tribal Vehicles',
     },
     {
-        value: 'TulalipTribes',
+        value: 'NA-TLT',
         label: 'Tulalip Tribes',
     },
     {
-        value: 'TurtleMountainChippewa',
+        value: 'NA-TMC',
         label: 'Turtle Mountain Chippewa',
     },
     {
-        value: 'UteMountainTribe',
+        value: 'NA-UMT',
         label: 'Ute Mountain Tribe',
     },
     {
-        value: 'WabanakiTribe',
+        value: 'NA-WBT',
         label: 'Wabanaki Tribe',
     },
     {
-        value: 'WashitawOuachita',
+        value: 'NA-WO',
         label: 'Washitaw/Ouachita',
     },
     {
-        value: 'WhiteEarthBandOfChippewa',
+        value: 'NA-WEBOC',
         label: 'White Earth Band of Chippewa',
     },
     {
-        value: 'WichitaTribe',
+        value: 'NA-WCT',
         label: 'Wichita Tribe',
     },
     {
-        value: 'WyandotteNation',
+        value: 'NA-WN',
         label: 'Wyandotte Nation',
     },
     {
-        value: 'YakamaNation',
+        value: 'NA-YN',
         label: 'Yakama Nation',
     },
     {
-        value: 'YanktonSiouxTribe',
+        value: 'NA-YST',
         label: 'Yankton Sioux Tribe',
     },
     {
-        value: 'YsletaDelSurPueblo',
+        value: 'NA-YDSP',
         label: 'Ysleta Del Sur Pueblo',
     },
 ];
 
 export const CanadianProvinces = [
     {
-        value: 'CAB',
+        value: 'CA-AB',
         label: 'Alberta',
     },
     {
-        value: 'CBC',
+        value: 'CA-BC',
         label: 'British Columbia',
     },
     {
-        value: 'CMB',
+        value: 'CA-MB',
         label: 'Manitoba',
     },
     {
-        value: 'CNB',
+        value: 'CA-NB',
         label: 'New Brunswick',
     },
     {
-        value: 'CNL',
+        value: 'CA-NL',
         label: 'Newfoundland and Labrador',
     },
     {
-        value: 'CNT',
+        value: 'CA-NT',
         label: 'Northwest Territories',
     },
     {
-        value: 'CNS',
+        value: 'CA-NS',
         label: 'Nova Scotia',
     },
     {
-        value: 'CNU',
+        value: 'CA-NU',
         label: 'Nunavut',
     },
     {
-        value: 'CON',
+        value: 'CA-ON',
         label: 'Ontario',
     },
     {
-        value: 'CPE',
+        value: 'CA-PE',
         label: 'Prince Edward Island',
     },
     {
-        value: 'CQC',
+        value: 'CA-QC',
         label: 'Quebec',
     },
     {
-        value: 'CSK',
+        value: 'CA-SK',
         label: 'Saskatchewan',
     },
     {
-        value: 'CYT',
+        value: 'CA-YT',
         label: 'Yukon',
     },
 ];
 
 export const MexicanStates = [
     {
-        value: 'MAG',
+        value: 'MX-AG',
         label: 'Aguascalientes',
     },
     {
-        value: 'MBC',
+        value: 'MX-BC',
         label: 'Baja California',
     },
     {
-        value: 'MBS',
+        value: 'MX-BS',
         label: 'Baja California Sur',
     },
     {
-        value: 'MCH',
+        value: 'MX-CH',
         label: 'Chihuahua',
     },
     {
-        value: 'MCL',
+        value: 'MX-CL',
         label: 'Colima',
     },
     {
-        value: 'MCM',
+        value: 'MX-CM',
         label: 'Campeche',
     },
     {
-        value: 'MCO',
+        value: 'MX-CO',
         label: 'Coahuila',
     },
     {
-        value: 'MCS',
+        value: 'MX-CS',
         label: 'Chiapas',
     },
     {
-        value: 'MDF',
+        value: 'MX-DF',
         label: 'Distrito Federal',
     },
     {
-        value: 'MDG',
+        value: 'MX-DG',
         label: 'Durango',
     },
     {
-        value: 'MGR',
+        value: 'MX-GR',
         label: 'Guerrero',
     },
     {
-        value: 'MGT',
+        value: 'MX-GT',
         label: 'Guanajuato',
     },
     {
-        value: 'MHG',
+        value: 'MX-HG',
         label: 'Hidalgo',
     },
     {
-        value: 'MJA',
+        value: 'MX-JA',
         label: 'Jalisco',
     },
     {
-        value: 'MEM',
+        value: 'MX-EM',
         label: 'México State',
     },
     {
-        value: 'MMI',
+        value: 'MX-MI',
         label: 'Michoacán',
     },
     {
-        value: 'MMO',
+        value: 'MX-MO',
         label: 'Morelos',
     },
     {
-        value: 'MNA',
+        value: 'MX-NA',
         label: 'Nayarit',
     },
     {
-        value: 'MNL',
+        value: 'MX-NL',
         label: 'Nuevo León',
     },
     {
-        value: 'MOA',
+        value: 'MX-OA',
         label: 'Oaxaca',
     },
     {
-        value: 'MPU',
+        value: 'MX-PU',
         label: 'Puebla',
     },
     {
-        value: 'MQT',
+        value: 'MX-QT',
         label: 'Querétaro',
     },
     {
-        value: 'MQR',
+        value: 'MX-QR',
         label: 'Quintana Roo',
     },
     {
-        value: 'MSI',
+        value: 'MX-SI',
         label: 'Sinaloa',
     },
     {
-        value: 'MSL',
+        value: 'MX-SL',
         label: 'San Luis Potosí',
     },
     {
-        value: 'MSO',
+        value: 'MX-SO',
         label: 'Sonora',
     },
     {
-        value: 'MTB',
+        value: 'MX-TB',
         label: 'Tabasco',
     },
     {
-        value: 'MTL',
+        value: 'MX-TL',
         label: 'Tlaxcala',
     },
     {
-        value: 'MTM',
+        value: 'MX-TM',
         label: 'Tamaulipas',
     },
     {
-        value: 'MVE',
+        value: 'MX-VE',
         label: 'Veracruz',
     },
     {
-        value: 'MYU',
+        value: 'MX-YU',
         label: 'Yucatán',
     },
     {
-        value: 'MZA',
+        value: 'MX-ZA',
         label: 'Zacatecas',
     },
+];
+
+export const AllStates = [
+  ...USStates,
+  ...USTerritories,
+  ...NativeAmericans,
+  ...CanadianProvinces,
+  ...MexicanStates,
 ];
