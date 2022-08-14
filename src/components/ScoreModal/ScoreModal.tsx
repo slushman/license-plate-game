@@ -1,20 +1,20 @@
 import * as React from 'react';
 
 import Alert from '../Alert';
-import { AllStates } from '../AllLists/data';
+import { AllStates } from '../../data';
 import Modal from '../Modal';
 import ShareButton from '../ShareButton';
 
 interface ScoreModalProps {
   alertText: string;
   close: () => void;
-  count: number;
+  score: number;
   selected: string[];
   setAlertText: (newAlertText: string) => void;
   show: boolean;
 }
 
-const ScoreModal = ({ alertText, close, count, selected, setAlertText, show }: ScoreModalProps) => {
+const ScoreModal = ({ alertText, close, score, selected, setAlertText, show }: ScoreModalProps) => {
   const usStatesCount = selected.filter(select => select.includes('US-')).length;
   const usTerritoriesCount = selected.filter(select => select.includes('UST-')).length;
   const nativeAmericanNationsCount = selected.filter(select => select.includes('NA-')).length;
@@ -22,7 +22,7 @@ const ScoreModal = ({ alertText, close, count, selected, setAlertText, show }: S
   const mexicanStateCount = selected.filter(select => select.includes('MX-')).length;
 
   let shareText = 'My latest license plate game scores:\n';
-  shareText += `Total score: ${count}\n\n`;
+  shareText += `Total score: ${score}\n\n`;
   shareText += `US States: ${usStatesCount}\n`;
   shareText += `US Territories: ${usTerritoriesCount}\n`;
   shareText += `Native American Nations: ${nativeAmericanNationsCount}\n`;
@@ -37,7 +37,7 @@ const ScoreModal = ({ alertText, close, count, selected, setAlertText, show }: S
         <Alert message={alertText} setAlertText={setAlertText} />
         <section>
           <div className="pb-8">
-            <h2>Total Score: {count}</h2>
+            <h2>Total Score: {score}</h2>
           </div>
           <div>
             <h2>Breakdown by groups:</h2>
@@ -52,10 +52,10 @@ const ScoreModal = ({ alertText, close, count, selected, setAlertText, show }: S
           <div>
             <h2>Plates seen so far:</h2>
             <ul>
-              {selected.map((select) => {
+              {selected.map((select, index) => {
                 const stateObject = AllStates.find(state => state.value === select);
                 return (
-                  <li>- {stateObject?.label}</li>
+                  <li key={index}>- {stateObject?.label}</li>
                 );
               })}
             </ul>
