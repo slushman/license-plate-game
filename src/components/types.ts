@@ -25,3 +25,14 @@ export interface ListInterface {
   selected: string[],
   title: string;
 }
+
+export enum IconButtonStyle {
+  Default,
+  Border,
+}
+
+export enum IconButtonLayout {
+  Default,
+  Square,
+  Tight,
+}
