@@ -1,9 +1,9 @@
-import * as React from 'react';
+import * as React from "react";
 
-import Alert from '../Alert';
-import { AllStates } from '../../data';
-import Modal from '../Modal';
-import ShareButton from '../ShareButton';
+import Alert from "../Alert";
+import { AllStates } from "../../data";
+import Modal from "../Modal";
+import ShareButton from "../ShareButton";
 
 interface ScoreModalProps {
   alertText: string;
@@ -14,14 +14,31 @@ interface ScoreModalProps {
   show: boolean;
 }
 
-const ScoreModal = ({ alertText, close, score, selected, setAlertText, show }: ScoreModalProps) => {
-  const usStatesCount = selected.filter(select => select.includes('US-')).length;
-  const usTerritoriesCount = selected.filter(select => select.includes('UST-')).length;
-  const nativeAmericanNationsCount = selected.filter(select => select.includes('NA-')).length;
-  const canadaianProvinceCount = selected.filter(select => select.includes('CA-')).length;
-  const mexicanStateCount = selected.filter(select => select.includes('MX-')).length;
+const ScoreModal = ({
+  alertText,
+  close,
+  score,
+  selected,
+  setAlertText,
+  show,
+}: ScoreModalProps) => {
+  const usStatesCount = selected.filter((select) =>
+    select.includes("US-")
+  ).length;
+  const usTerritoriesCount = selected.filter((select) =>
+    select.includes("UST-")
+  ).length;
+  const nativeAmericanNationsCount = selected.filter((select) =>
+    select.includes("NA-")
+  ).length;
+  const canadaianProvinceCount = selected.filter((select) =>
+    select.includes("CA-")
+  ).length;
+  const mexicanStateCount = selected.filter((select) =>
+    select.includes("MX-")
+  ).length;
 
-  let shareText = 'My latest license plate game scores:\n';
+  let shareText = "My latest license plate game scores:\n";
   shareText += `Total score: ${score}\n\n`;
   shareText += `US States: ${usStatesCount}\n`;
   shareText += `US Territories: ${usTerritoriesCount}\n`;
@@ -53,10 +70,10 @@ const ScoreModal = ({ alertText, close, score, selected, setAlertText, show }: S
             <h2>Plates seen so far:</h2>
             <ul>
               {selected.map((select, index) => {
-                const stateObject = AllStates.find(state => state.value === select);
-                return (
-                  <li key={index}>- {stateObject?.label}</li>
+                const stateObject = AllStates.find(
+                  (state) => state.value === select
                 );
+                return <li key={index}>- {stateObject?.label}</li>;
               })}
             </ul>
           </div>
@@ -65,6 +82,6 @@ const ScoreModal = ({ alertText, close, score, selected, setAlertText, show }: S
       </div>
     </Modal>
   );
-}
+};
 
 export default React.memo(ScoreModal);
