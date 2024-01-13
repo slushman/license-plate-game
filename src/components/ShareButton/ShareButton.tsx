@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 
 const navigator = window.navigator as any;
 
@@ -9,29 +9,32 @@ interface ShareButtonProps {
 
 const ShareButton = ({ setAlertText, shareText }: ShareButtonProps) => {
   const handleShare = React.useCallback(() => {
-    if ('canShare' in navigator) {
-      navigator.share({
-        title: 'Phonics results',
-        text: shareText,
-      })
-      .catch(console.error);
+    if ("canShare" in navigator) {
+      navigator
+        .share({
+          title: "Phonics results",
+          text: shareText,
+        })
+        .catch(console.error);
     } else if (navigator.clipboard) {
       navigator.clipboard.writeText(shareText);
 
-      console.log('Copied to clipboard!');
+      console.log("Copied to clipboard!");
 
-      setAlertText('Copied to clipboard!');
+      setAlertText("Copied to clipboard!");
     } else {
-      alert('Your browser does not support sharing. Please copy the text and share it yourself.');
+      alert(
+        "Your browser does not support sharing. Please copy the text and share it yourself."
+      );
     }
   }, [setAlertText, shareText]);
 
   return (
     <button
-      className="border-2 rounded border-solid px-4 py-1 bg-darkblue"
+      className="border-2 rounded border-solid px-4 py-1 bg-darkblue flex"
       onClick={handleShare}
     >
-      <i className="icono-share scale-75" />
+      <i className="gg-share scale-75 mr-5 mt-2" />
       Share
     </button>
   );
