@@ -21,7 +21,7 @@ const IconButton = ({
       onClick={onClick}
     >
       {icon}
-      <span className="hidden">{label}</span>
+      <span className="sr-only">{label}</span>
     </button>
   );
 };

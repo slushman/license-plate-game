@@ -66,7 +66,7 @@ const AllLists = () => {
     );
 
   return (
-    <div className="p-4">
+    <div className="p-4" id="top" tabIndex={-1}>
       <Header
         onClickScore={handleOpenModal}
         onReset={handleResetGame}

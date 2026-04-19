@@ -16,17 +16,21 @@ const Alert = ({
   setAlertText,
   type = AlertType.Default,
 }: AlertProps) => {
-  setTimeout(() => {
-    setAlertText('')
-  }, 2000);
+  React.useEffect(() => {
+    if (!message) return;
+    const timer = setTimeout(() => setAlertText(''), 2000);
+    return () => clearTimeout(timer);
+  }, [message, setAlertText]);
 
   const hasMessage = message !== '';
+  const isError = type === AlertType.Error;
 
   return (
     <div
+      aria-live={isError ? 'assertive' : 'polite'}
       className={`
         absolute
-        ${type === AlertType.Error ? 'bg-red-500' : 'bg-white'}
+        ${isError ? 'bg-red-500' : 'bg-white'}
         border-2
         border-solid
         duration-200
@@ -35,13 +39,14 @@ const Alert = ({
         p-3
         rounded
         text-center
-        ${type === AlertType.Error ? 'text-white' : 'text-darkblue'}
+        ${isError ? 'text-white' : 'text-darkblue'}
         text-xl
         top-20
         transition-opacity
         w-1/2
         z-50
       `}
+      role={isError ? 'alert' : 'status'}
     >{message}</div>
   );
 };

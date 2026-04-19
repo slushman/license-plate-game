@@ -10,9 +10,56 @@ interface ModalProps {
   title?: string;
 }
 
-const Modal = ({ children, onClose, show, title = "" }: ModalProps) => (
-  <div
-    className={`
+const Modal = ({ children, onClose, show, title = "" }: ModalProps) => {
+  const titleId = React.useId();
+  const dialogRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    if (!show) return;
+
+    const dialog = dialogRef.current;
+    if (!dialog) return;
+
+    const previousFocus = document.activeElement as HTMLElement | null;
+
+    const focusables = dialog.querySelectorAll<HTMLElement>(
+      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    );
+    focusables[0]?.focus();
+
+    const handleKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        onClose();
+        return;
+      }
+      if (event.key !== "Tab" || focusables.length === 0) return;
+
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    };
+
+    document.addEventListener("keydown", handleKey);
+
+    return () => {
+      document.removeEventListener("keydown", handleKey);
+      previousFocus?.focus?.();
+    };
+  }, [show, onClose]);
+
+  return (
+    <div
+      aria-labelledby={titleId}
+      aria-modal="true"
+      className={`
     absolute
     bg-darkblue
     duration-200
@@ -30,15 +77,19 @@ const Modal = ({ children, onClose, show, title = "" }: ModalProps) => (
     transition-opacity
     z-50
   `}
-  >
-    <div className="flex flex-col text-left p-8 overflow-auto max-w-prose h-full w-full">
-      <div className="flex justify-between items-center mb-6">
-        <h1 className="m-0">{title}</h1>
-        <IconButton icon={<CloseIcon />} label="Close" onClick={onClose} />
+      inert={!show}
+      ref={dialogRef}
+      role="dialog"
+    >
+      <div className="flex flex-col text-left p-8 overflow-auto max-w-prose h-full w-full">
+        <div className="flex justify-between items-center mb-6">
+          <h1 className="m-0" id={titleId}>{title}</h1>
+          <IconButton icon={<CloseIcon />} label="Close" onClick={onClose} />
+        </div>
+        {children}
       </div>
-      {children}
     </div>
-  </div>
-);
+  );
+};
 
 export default React.memo(Modal);

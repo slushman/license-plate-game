@@ -11,7 +11,7 @@ const ListItem = ({ checked, label, onChange, value }: ListItemInterface) => {
 
   const labelClasses = classnames({
     'bg-lightblue': !checked,
-    'bg-medblue': checked,
+    'bg-darkblue': checked,
     'border-2': true,
     'border-lightblue': !checked,
     'border-solid': checked,
@@ -20,7 +20,7 @@ const ListItem = ({ checked, label, onChange, value }: ListItemInterface) => {
     'm-2': true,
     'p-4': true,
     'text-lg': true,
-    'text-medblue': !checked,
+    'text-darkblue': !checked,
     'text-white': checked,
     block: true,
     flex: true,

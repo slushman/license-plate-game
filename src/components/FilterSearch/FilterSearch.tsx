@@ -15,9 +15,10 @@ const FilterSearch = ({ searchText, setSearchText }: FilterSearchProps) => {
 
   return (
     <div className="flex items-center mb-6 rounded bg-lightblue border-2 border-solid w-full max-w-[366px] text-darkblue">
-      <label className="p-2">Search:</label>
+      <label className="p-2" htmlFor="filter-search">Search:</label>
       <input
         className="h-seo p-2 w-[68%]"
+        id="filter-search"
         onChange={handleSearch}
         type="text"
         value={searchText}
