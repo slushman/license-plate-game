@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import IconButton from "../IconButton";
+import { CloseIcon } from "../icons";
 
 interface ModalProps {
   children: React.ReactElement;
@@ -33,7 +34,7 @@ const Modal = ({ children, onClose, show, title = "" }: ModalProps) => (
     <div className="flex flex-col text-left p-8 overflow-auto max-w-prose h-full w-full">
       <div className="flex justify-between items-center mb-6">
         <h1 className="m-0">{title}</h1>
-        <IconButton icon="gg-close" label="Close" onClick={onClose} />
+        <IconButton icon={<CloseIcon />} label="Close" onClick={onClose} />
       </div>
       {children}
     </div>

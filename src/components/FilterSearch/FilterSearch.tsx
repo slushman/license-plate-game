@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import { CloseIcon } from "../icons";
+
 interface FilterSearchProps {
   searchText: string;
   setSearchText: (newValue: string) => void;
@@ -25,7 +27,7 @@ const FilterSearch = ({ searchText, setSearchText }: FilterSearchProps) => {
         className="h-seo text-2xl w-seo flex justify-center items-center"
         onClick={resetSearch}
       >
-        <i className="gg-close"></i>
+        <CloseIcon />
       </button>
     </div>
   );

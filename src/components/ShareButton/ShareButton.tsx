@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import { ShareIcon } from "../icons";
+
 const navigator = window.navigator as any;
 
 interface ShareButtonProps {
@@ -31,10 +33,10 @@ const ShareButton = ({ setAlertText, shareText }: ShareButtonProps) => {
 
   return (
     <button
-      className="border-2 rounded border-solid px-4 py-1 bg-darkblue flex"
+      className="border-2 rounded border-solid px-4 py-1 bg-darkblue flex items-center"
       onClick={handleShare}
     >
-      <i className="gg-share scale-75 mr-5 mt-2" />
+      <ShareIcon className="mr-2" />
       Share
     </button>
   );

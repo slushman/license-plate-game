@@ -1,7 +1,7 @@
 import * as React from "react";
 
 interface IconButtonProps {
-  icon: string;
+  icon: React.ReactNode;
   label: string;
   layout?: "default" | "tight";
   onClick: () => void;
@@ -20,7 +20,7 @@ const IconButton = ({
       className={`text-3xl flex justify-center items-center ${classes}`}
       onClick={onClick}
     >
-      <i aria-hidden="true" className={icon} />
+      {icon}
       <span className="hidden">{label}</span>
     </button>
   );
